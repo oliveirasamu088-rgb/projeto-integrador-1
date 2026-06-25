@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contato | Portfólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Portfólio</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header>
     <nav class="navbar">
-
         <div class="logo">Portfolio</div>
-
         <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="blog.html">blog</a></li>
             <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="blog.html">blog</a></li>
             <li><a href="curriculo.html">Curriculo</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
-
     </nav>
 </header>
 
@@ -33,63 +27,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <div class="contato-header">
         <h1>Entre em Contato</h1>
-        <p>
-            Estou disponível para oportunidades,
-            projetos e networking.
-        </p>
+        <p>Estou disponível para oportunidades, projetos e networking.</p>
     </div>
 
     <div class="contato-container">
 
+        <!-- ABRE o bloco de informações -->
         <div class="contato-info">
 
             <div class="contato-card">
-                <i class="fa-solid fa-envelope"></i>
-                <h3>Email</h3>
-                <p>seuemail@email.com</p>
+                <a href="mailto:seuemail@exemplo.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>sarahassuncao090@gmail.com</p>
+                </a>
             </div>
 
             <div class="contato-card">
-                <i class="fa-brands fa-whatsapp"></i>
-                <h3>WhatsApp</h3>
-                <p>61 8263-0072</p>
+                <a href="https://wa.me/556182630072" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>(61) 8263-0072</p>
+                </a>
             </div>
 
+            <!-- O Instagram agora está CORRETAMENTE dentro de contato-info -->
             <div class="contato-card">
-                <i class="fa-brands fa-instagram"></i>
-                <h3>Instagram</h3>
-                <p>@seuinstagram</p>
+                <a href="https://www.instagram.com/_sarahriggio?utm_source=qr&igsh=MnUxYjY5M3FrN2dq" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@_sarahriggio</p> <!-- Dica: Adicionei o texto para manter o padrão dos outros cards -->
+                </a>
             </div>
 
-        </div>
+        </div> <!-- FECHA contato-info no lugar certo -->
 
+        <!-- Formulário ao lado ou abaixo das informações -->
         <form class="formulario">
-
-            <input
-            type="text"
-            placeholder="Seu nome"
-            required>
-
-            <input
-            type="email"
-            placeholder="Seu e-mail"
-            required>
-
-            <textarea
-            rows="6"
-            placeholder="Digite sua mensagem"
-            required>
-            </textarea>
-
-            <button type="submit">
-                Enviar Mensagem
-            </button>
-
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea rows="6" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
         </form>
 
-    </div>
+    </div> <!-- FECHA contato-container -->
 
 </section>
-
 </body>
 </html>
