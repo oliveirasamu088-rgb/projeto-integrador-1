@@ -6,7 +6,7 @@ let posts = JSON.parse(localStorage.getItem("posts")) || [
 {
     titulo:"JavaScript Moderno",
     texto:"Conheça os recursos mais recentes da linguagem JavaScript e como eles melhoram a produtividade dos desenvolvedores.",
-    imagem:"https://picsum.photos/600/400?random=1"
+    imagem:"https://blog.gokursos.com/wp-content/uploads/2023/05/programming-background-with-person-working-with-codes-computer-1200x800.jpg"
 },
 
 {
