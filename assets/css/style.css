@@ -655,3 +655,275 @@ body{
     }
 
 }
+/* ==========================
+   PROJETOS
+========================== */
+
+.projetos{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#38bdf8;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#cbd5e1;
+}
+
+.projetos .cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.projetos .card{
+    background:#1e293b;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    transition:.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.projetos .card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:4px;
+    background:#38bdf8;
+    transition:.5s;
+}
+
+.projetos .card:hover::before{
+    left:0;
+}
+
+.projetos .card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(56,189,248,.2);
+}
+
+.projetos .card i{
+    font-size:3rem;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.projetos .card h3{
+    margin-bottom:15px;
+}
+
+.projetos .card p{
+    color:#cbd5e1;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.techs{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.techs span{
+    background:#0f172a;
+    color:#38bdf8;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:.85rem;
+}
+
+.project-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:12px 24px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.project-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(56,189,248,.3);
+}
+
+@media(max-width:768px){
+
+    .section-title h2{
+        font-size:2.2rem;
+    }
+
+    .projetos{
+        padding:60px 5%;
+    }
+}
+/* ==================
+BLOG
+================== */
+
+.blog-header{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.blog-header h1{
+    font-size:3.5rem;
+    margin:20px 0;
+}
+
+.blog-header h1 span{
+    color:#38bdf8;
+}
+
+.blog-header p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.featured{
+    padding:0 8% 50px;
+}
+
+.featured-card{
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    border-left:5px solid #38bdf8;
+}
+
+.featured-card h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.blog-container{
+    padding:0 8% 80px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.blog-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.blog-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(56,189,248,.2);
+}
+
+.blog-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.blog-card p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.blog-actions{
+    display:flex;
+    gap:10px;
+}
+
+.edit-btn,
+.delete-btn{
+    flex:1;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.edit-btn{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+@media(max-width:600px){
+
+    .blog-header h1{
+        font-size:2.2rem;
+    }
+
+    .blog-container{
+        padding:0 5% 50px;
+    }
+
+}
+/* ==================
+ADMIN BLOG
+================== */
+
+.admin-blog{
+    background:#1e293b;
+    margin:40px 8%;
+    padding:30px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.admin-blog h2{
+    color:#38bdf8;
+}
+
+.admin-blog input,
+.admin-blog textarea{
+    background:#0f172a;
+    border:none;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    outline:none;
+}
+
+.admin-blog textarea{
+    min-height:120px;
+    resize:none;
+}
+
+.blog-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+    transition:.4s;
+}
+
+.blog-card:hover .blog-image{
+    transform:scale(1.05);
+}
+
+.blog-card{
+    overflow:hidden;
+}

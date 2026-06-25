@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blog | Meu Portfólio</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    
+
+<nav class="navbar">
+    <div class="logo">Meu Blog</div>
+
+    <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
+  <section class="admin-blog">
+
+    <h2>Nova Publicação</h2>
+
+    <input
+        type="text"
+        id="titulo"
+        placeholder="Título da notícia">
+
+    <textarea
+        id="texto"
+        placeholder="Conteúdo da notícia">
+    </textarea>
+
+    <input
+        type="file"
+        id="imagem"
+        accept="image/*">
+
+    <button id="addPost" class="btn-primary">
+        Publicar
+    </button>
+
+</section>
+
+<section class="featured">
+
+    <div class="featured-card">
+        <h2>Destaque da Semana</h2>
+
+        <h3>O futuro do desenvolvimento web em 2025</h3>
+
+        <p>
+            Tecnologias modernas continuam revolucionando a forma
+            como aplicações são desenvolvidas.
+        </p>
+    </div>
+
+</section>
+
+<section class="blog-container" id="blogContainer">
+
+</section>
+
+<script src="script/app.js"></script>
+
 </body>
 </html>
